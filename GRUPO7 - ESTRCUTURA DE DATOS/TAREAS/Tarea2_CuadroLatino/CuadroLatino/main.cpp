@@ -15,7 +15,7 @@ int main()
 	do
 	{
 		dimension = tls.validate_int("\nIngrese la dimension del cuadro: ");
-	} while (dimension < 1 || dimension % 2 == 0);
+	} while (dimension < 1);
 
 	Matriz mat(dimension);
 	CLatino cuadroLatino;
