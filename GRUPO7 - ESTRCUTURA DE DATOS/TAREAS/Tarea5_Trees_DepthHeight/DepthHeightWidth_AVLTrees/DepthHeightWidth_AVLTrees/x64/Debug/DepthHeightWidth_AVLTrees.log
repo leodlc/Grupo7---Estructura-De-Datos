@@ -1,0 +1,5 @@
+﻿  main.cpp
+D:\pzeadrian\Documents\c++\DepthHeightWidth_AVLTrees\DepthHeightWidth_AVLTrees\AVL.h(107): warning C4715: 'AVL::search': no todas las rutas de acceso de control devuelven un valor
+D:\pzeadrian\Documents\c++\DepthHeightWidth_AVLTrees\DepthHeightWidth_AVLTrees\TreeTools.h(56): warning C4715: 'TreeTools::depth': no todas las rutas de acceso de control devuelven un valor
+D:\pzeadrian\Documents\c++\DepthHeightWidth_AVLTrees\DepthHeightWidth_AVLTrees\TreeTools.h(78): warning C4715: 'TreeTools::returnDepth': no todas las rutas de acceso de control devuelven un valor
+  DepthHeightWidth_AVLTrees.vcxproj -> D:\pzeadrian\Documents\c++\DepthHeightWidth_AVLTrees\x64\Debug\DepthHeightWidth_AVLTrees.exe
