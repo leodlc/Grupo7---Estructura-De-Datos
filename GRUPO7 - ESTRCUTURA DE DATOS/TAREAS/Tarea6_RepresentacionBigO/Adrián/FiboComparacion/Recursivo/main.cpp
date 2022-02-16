@@ -16,8 +16,8 @@ main(){
 
   system("cls");
 
-  printf("\t\t n     |     Fib(n)    |   [ms] \n");
-  printf("\t\t-------+---------------+--------\n");
+   printf("\t\t n  |         Fib(n)       |   [ms] \n");
+   printf("\t\t----+----------------------+--------\n");
   for(n = 0; n <= serie; n++)
   {
     printf("\t\t%3d | ",n);

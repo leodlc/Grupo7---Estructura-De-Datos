@@ -15,10 +15,11 @@ main(){
    cout << "Serie de: ";
    cin >> serie;
 
-   printf("\t\t n     |     Fib(n)    |   [ms] \n");
-   printf("\t\t-------+---------------+--------\n");
-   for(n = 0; n <= serie; n++){
-      printf("\t\t%lld | ",n);
+   printf("\t\t n  |         Fib(n)       |   [ms] \n");
+   printf("\t\t----+----------------------+--------\n");
+   for(n = 0; n <= serie; n++)
+   {
+      printf("\t\t%3d | ",n);
       QueryPerformanceCounter(&t_ini);
       b=FibonacciA2(n);
       QueryPerformanceCounter(&t_fin);
