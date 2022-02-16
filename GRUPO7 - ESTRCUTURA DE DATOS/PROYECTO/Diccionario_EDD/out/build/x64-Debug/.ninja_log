@@ -1,0 +1,6 @@
+# ninja log v5
+10	1218	6645237558923018	CMakeFiles/expression_notation.dir/menu_option.cpp.obj	c515de1106bfc35a
+5	1351	6645237560243122	CMakeFiles/expression_notation.dir/console.cpp.obj	27ca7f19c3db79c5
+21	1398	6645237560723155	CMakeFiles/expression_notation.dir/main.cpp.obj	29712fff8ee20f2d
+1	1761	6645237564363408	CMakeFiles/expression_notation.dir/menu.cpp.obj	354a83ae083bfb31
+13	1850	6645237565253475	CMakeFiles/expression_notation.dir/marquee.cpp.obj	ef20e346af2aa9c9
