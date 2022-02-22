@@ -1,0 +1,12 @@
+﻿  main.cpp
+C:\Users\pzeadrian\source\repos\parcial33\parcial33\Tools.h(70,45): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\pzeadrian\source\repos\parcial33\parcial33\Tools.h(86,17): warning C4244: '=': conversión de 'LONG' a 'SHORT'; posible pérdida de datos
+C:\Users\pzeadrian\source\repos\parcial33\parcial33\Tools.h(87,17): warning C4244: '=': conversión de 'LONG' a 'SHORT'; posible pérdida de datos
+C:\Users\pzeadrian\source\repos\parcial33\parcial33\Tools.h(113,18): warning C4244: '=': conversión de 'LONG' a 'SHORT'; posible pérdida de datos
+C:\Users\pzeadrian\source\repos\parcial33\parcial33\Tools.h(114,18): warning C4244: '=': conversión de 'LONG' a 'SHORT'; posible pérdida de datos
+C:\Users\pzeadrian\source\repos\parcial33\parcial33\AsyncScrollDetect.h(1,9): warning C4068: pragma "ones" desconocida
+C:\Users\pzeadrian\source\repos\parcial33\parcial33\AsyncScrollDetect.h(50,10): warning C4244: 'inicializando': conversión de 'time_t' a 'long'; posible pérdida de datos
+C:\Users\pzeadrian\source\repos\parcial33\parcial33\BinaryTree.h(97,46): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\pzeadrian\source\repos\parcial33\parcial33\BinaryTree.h(131,46): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\pzeadrian\source\repos\parcial33\parcial33\Tools.h(102): warning C4715: 'Tools::GetConsoleCursorPosition': no todas las rutas de acceso de control devuelven un valor
+  parcial33.vcxproj -> C:\Users\pzeadrian\source\repos\parcial33\x64\Debug\parcial33.exe

@@ -1,0 +1,30 @@
+﻿  console.cpp
+C:\Users\pzeadrian\Grupo7---Estructura-De-Datos\GRUPO7 - ESTRCUTURA DE DATOS\PROYECTO\traductor2\console.cpp(21,11): warning C4838: la conversión de 'unsigned __int64' en 'SHORT' requiere una conversión de restricción
+C:\Users\pzeadrian\Grupo7---Estructura-De-Datos\GRUPO7 - ESTRCUTURA DE DATOS\PROYECTO\traductor2\console.cpp(23,2): warning C4267: 'inicializando': conversión de 'size_t' a 'SHORT'; posible pérdida de datos
+C:\Users\pzeadrian\Grupo7---Estructura-De-Datos\GRUPO7 - ESTRCUTURA DE DATOS\PROYECTO\traductor2\console.cpp(25,33): warning C4838: la conversión de 'unsigned __int64' en 'SHORT' requiere una conversión de restricción
+C:\Users\pzeadrian\Grupo7---Estructura-De-Datos\GRUPO7 - ESTRCUTURA DE DATOS\PROYECTO\traductor2\console.cpp(25,39): warning C4267: 'inicializando': conversión de 'size_t' a 'SHORT'; posible pérdida de datos
+C:\Users\pzeadrian\Grupo7---Estructura-De-Datos\GRUPO7 - ESTRCUTURA DE DATOS\PROYECTO\traductor2\console.cpp(72,3): warning C4838: la conversión de 'int' en 'SHORT' requiere una conversión de restricción
+C:\Users\pzeadrian\Grupo7---Estructura-De-Datos\GRUPO7 - ESTRCUTURA DE DATOS\PROYECTO\traductor2\console.cpp(73,3): warning C4838: la conversión de 'int' en 'SHORT' requiere una conversión de restricción
+C:\Users\pzeadrian\Grupo7---Estructura-De-Datos\GRUPO7 - ESTRCUTURA DE DATOS\PROYECTO\traductor2\console.cpp(74,5): warning C4838: la conversión de 'int' en 'SHORT' requiere una conversión de restricción
+C:\Users\pzeadrian\Grupo7---Estructura-De-Datos\GRUPO7 - ESTRCUTURA DE DATOS\PROYECTO\traductor2\console.cpp(75,5): warning C4838: la conversión de 'int' en 'SHORT' requiere una conversión de restricción
+C:\Users\pzeadrian\Grupo7---Estructura-De-Datos\GRUPO7 - ESTRCUTURA DE DATOS\PROYECTO\traductor2\console.cpp(77,24): warning C4838: la conversión de 'int' en 'SHORT' requiere una conversión de restricción
+C:\Users\pzeadrian\Grupo7---Estructura-De-Datos\GRUPO7 - ESTRCUTURA DE DATOS\PROYECTO\traductor2\console.cpp(77,31): warning C4838: la conversión de 'int' en 'SHORT' requiere una conversión de restricción
+C:\Users\pzeadrian\Grupo7---Estructura-De-Datos\GRUPO7 - ESTRCUTURA DE DATOS\PROYECTO\traductor2\console.cpp(99,17): warning C4838: la conversión de 'int' en 'SHORT' requiere una conversión de restricción
+C:\Users\pzeadrian\Grupo7---Estructura-De-Datos\GRUPO7 - ESTRCUTURA DE DATOS\PROYECTO\traductor2\console.cpp(99,26): warning C4838: la conversión de 'int' en 'SHORT' requiere una conversión de restricción
+  marquee.cpp
+  Menu.cpp
+C:\Users\pzeadrian\Grupo7---Estructura-De-Datos\GRUPO7 - ESTRCUTURA DE DATOS\PROYECTO\traductor2\Tools.h(50,45): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\pzeadrian\Grupo7---Estructura-De-Datos\GRUPO7 - ESTRCUTURA DE DATOS\PROYECTO\traductor2\Tools.h(66,17): warning C4244: '=': conversión de 'LONG' a 'SHORT'; posible pérdida de datos
+C:\Users\pzeadrian\Grupo7---Estructura-De-Datos\GRUPO7 - ESTRCUTURA DE DATOS\PROYECTO\traductor2\Tools.h(67,17): warning C4244: '=': conversión de 'LONG' a 'SHORT'; posible pérdida de datos
+C:\Users\pzeadrian\Grupo7---Estructura-De-Datos\GRUPO7 - ESTRCUTURA DE DATOS\PROYECTO\traductor2\Tools.h(93,17): warning C4244: '=': conversión de 'LONG' a 'SHORT'; posible pérdida de datos
+C:\Users\pzeadrian\Grupo7---Estructura-De-Datos\GRUPO7 - ESTRCUTURA DE DATOS\PROYECTO\traductor2\Tools.h(94,17): warning C4244: '=': conversión de 'LONG' a 'SHORT'; posible pérdida de datos
+C:\Users\pzeadrian\Grupo7---Estructura-De-Datos\GRUPO7 - ESTRCUTURA DE DATOS\PROYECTO\traductor2\AsyncScrollDetect.h(1,9): warning C4068: pragma "ones" desconocida
+C:\Users\pzeadrian\Grupo7---Estructura-De-Datos\GRUPO7 - ESTRCUTURA DE DATOS\PROYECTO\traductor2\AsyncScrollDetect.h(50,10): warning C4244: 'inicializando': conversión de 'time_t' a 'long'; posible pérdida de datos
+C:\Users\pzeadrian\Grupo7---Estructura-De-Datos\GRUPO7 - ESTRCUTURA DE DATOS\PROYECTO\traductor2\Ingreso.h(56,17): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\pzeadrian\Grupo7---Estructura-De-Datos\GRUPO7 - ESTRCUTURA DE DATOS\PROYECTO\traductor2\DiccionarioG.h(46,17): warning C4834: se descarta el valor devuelto de la función con el atributo "nodiscard"
+C:\Users\pzeadrian\Grupo7---Estructura-De-Datos\GRUPO7 - ESTRCUTURA DE DATOS\PROYECTO\traductor2\DiccionarioG.h(37,10): warning C4101: 'input': variable local sin referencia
+C:\Users\pzeadrian\Grupo7---Estructura-De-Datos\GRUPO7 - ESTRCUTURA DE DATOS\PROYECTO\traductor2\myMenu.h(88,6): warning C4101: 'choice': variable local sin referencia
+C:\Users\pzeadrian\Grupo7---Estructura-De-Datos\GRUPO7 - ESTRCUTURA DE DATOS\PROYECTO\traductor2\myMenu.h(94,10): warning C4101: 'input': variable local sin referencia
+  Generando código...
+C:\Users\pzeadrian\Grupo7---Estructura-De-Datos\GRUPO7 - ESTRCUTURA DE DATOS\PROYECTO\traductor2\Tools.h(82): warning C4715: 'Tools::GetConsoleCursorPosition': no todas las rutas de acceso de control devuelven un valor
+  traductor2.vcxproj -> C:\Users\pzeadrian\Grupo7---Estructura-De-Datos\GRUPO7 - ESTRCUTURA DE DATOS\PROYECTO\traductor2\x64\Debug\traductor2.exe
