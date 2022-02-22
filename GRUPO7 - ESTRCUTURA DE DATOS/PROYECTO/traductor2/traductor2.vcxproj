@@ -139,14 +139,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="console.cpp" />
+    <ClCompile Include="marquee.cpp" />
     <ClCompile Include="Menu.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArbolBinario.h" />
     <ClInclude Include="AsyncScrollDetect.h" />
+    <ClInclude Include="console.h" />
     <ClInclude Include="DiccionarioG.h" />
     <ClInclude Include="Excluir.h" />
     <ClInclude Include="Ingreso.h" />
+    <ClInclude Include="marquee.h" />
     <ClInclude Include="myMenu.h" />
     <ClInclude Include="NodoArbol.h" />
     <ClInclude Include="Tools.h" />

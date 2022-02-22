@@ -1,4 +1,4 @@
-#pragma once
+
 #pragma once
 #include <conio.h>
 #include <iostream>
@@ -7,10 +7,13 @@
 #include "Tools.h"
 #include "AsyncScrollDetect.h"
 #include <string>
+#include "marquee.h"
+#include "console.h"
 #include "DiccionarioG.h"
 #include "ArbolBinario.h"
 #include "NodoArbol.h"
 #include "Ingreso.h"
+
 
 #define KEY_UP 72
 #define KEY_DOWN 80
@@ -90,6 +93,7 @@ void MyMenu::principalMenu()
 	tree.llenarDiccionario(aIngles, aEspaniol, aPronunciacion);
 	Ingreso input;
 	string translate;
+	Marquee marquee("Universidad de las fuerzas armadas ESPE", Console::get().get_console_size().X - 3);
 	vector<std::string> options = { "Traducir a espaniol", "Translate word to english", "Salir" };
 	bool repeat = true;
 	int option;
@@ -125,4 +129,5 @@ void MyMenu::principalMenu()
 		}
 
 	} while (repeat);
+	marquee.display();
 }
