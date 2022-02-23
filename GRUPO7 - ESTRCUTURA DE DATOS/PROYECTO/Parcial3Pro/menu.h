@@ -84,7 +84,7 @@ void MyMenu::principalMenu()
 	Marquee marquee("Universidad de las fuerzas armadas ESPE - Grupo 7", Console::get().get_console_size().X - 3);
 	cout << "\n " << endl;
 	cout << "\n " << endl;
-	vector<std::string> options = {"Buscar palabra", "Agregar palabra", "Ver diccionario completo","Pixelar Imagen", "Salir"};
+	vector<std::string> options = {"Buscar palabra", "Agregar palabra", "Ver diccionario completo", "Salir"};
 	bool repeat = true;
 	int option;
 	string data, meaning;
@@ -100,7 +100,7 @@ void MyMenu::principalMenu()
 		cout << "\n " << endl;
 		cout << "\n " << endl;
 		
-		option = showCaptureOp("\n Menu Diccionario", options, 5);
+		option = showCaptureOp("\n Menu Diccionario", options, 4);
 
 		//alternatives
 		switch (option)
@@ -124,14 +124,12 @@ void MyMenu::principalMenu()
 			_getch();
 			break;
 		case 4:
-
-			break;
-		case 5:
 			system("cls");
 			cout << "\nSaliendo... Presione una tecla para continuar" << endl;
 			_getch();
 			repeat = false;
 			break;
+		
 		}
 		
 	} while (repeat);
