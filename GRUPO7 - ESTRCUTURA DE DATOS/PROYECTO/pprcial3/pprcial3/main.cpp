@@ -8,7 +8,8 @@ int main()
 {
 
 	MyMenu menu;
-	menu.principalMenu();
+	//menu.principalMenu();
+	menu.showAuthMenu();
 	return 0;
 
 }
