@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Users\ediso\Downloads\Pixel\pixel.h(7,10): fatal error C1083: No se puede abrir el archivo incluir: 'opencv2/opencv.hpp': No such file or directory
+  p.cpp
+C:\Users\ediso\Downloads\Pixel\pixel.h(7,10): fatal error C1083: No se puede abrir el archivo incluir: 'opencv2/opencv.hpp': No such file or directory
+  Generando código...
