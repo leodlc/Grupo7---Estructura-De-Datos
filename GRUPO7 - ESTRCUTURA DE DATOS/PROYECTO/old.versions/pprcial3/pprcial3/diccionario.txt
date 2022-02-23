@@ -1,0 +1,5 @@
+car/coche
+computadora/maquina
+perro/animal
+vidrio/elemento
+puerta/door

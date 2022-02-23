@@ -2,6 +2,12 @@
 #include <iostream>
 #include <stdio.h>
 
+/**
+* @file Node.h
+* @author Adrian Paez
+* @version 1.0
+*/
+
 using namespace std;
 
 class Node
@@ -15,19 +21,77 @@ private:
     Node* father;
 
 public:
+
+    /**
+    * @brief setData
+    * @param string
+    * @return void
+    */
     void setData(string);
+
+    /**
+    * @brief getData
+    * @param
+    * @return string
+    */
     string getData();
 
+    /**
+    * @brief setMeaning
+    * @param string
+    * @return void
+    */
     void setMeaning(string);
+
+    /**
+    * @brief getMeaning
+    * @param
+    * @return string
+    */
     string getMeaning();
 
+    /**
+    * @brief setLeft
+    * @param Node*
+    * @return void
+    */
     void setLeft(Node*);
+
+    /**
+    * @brief getLeft
+    * @param
+    * @return Node*&
+    */
     Node*& getLeft();
 
+
+    /**
+    * @brief setRight
+    * @param Node*
+    * @return void
+    */
     void setRight(Node*);
+
+    /**
+    * @brief getRight
+    * @param
+    * @return Node*&
+    */
     Node*& getRight();
 
+
+    /**
+    * @brief setFather
+    * @param Node*
+    * @return void
+    */
     void setFather(Node*);
+
+    /**
+    * @brief getFather
+    * @param
+    * @return Node*&
+    */
     Node*& getFather();
 
 };

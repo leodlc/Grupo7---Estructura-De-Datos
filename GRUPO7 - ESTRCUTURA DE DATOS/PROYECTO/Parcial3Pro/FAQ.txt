@@ -1,0 +1,59 @@
+					UNIVERSIDAD DE LAS FUERZAS ARMADAS - ESPE
+						   - Estructura de Datos -
+  							 Grupo No.7
+					    Leonardo de la Cadena y Adrián Páez
+						
+						DICCIONARIO ESPAÑOL - INGLÉS
+
+
+
+	1. Como instalar el programa
+	
+	   - Para instalar el programa, en la carpeta encontrará dos tipos de archivos ejecutables, puede escoger el set.msi o
+	     el setup.exe.
+	   -  Al dar doble click sobre alguno de estos instaladores, saltara la una ventana para poder instalar el programa.
+	   - Le pedirá escoger la ruta en el que se va a instalar el programa, seleccione una personalizada o por el contrario
+	     puede seleccionar la opción por default.
+	   - Se le pedirá si desea crear un acceso directo en el escritorio por si lo desea.
+	   - Dar click en el botón instalar y esperar a que finalice.
+	   - Una vez finalizado ya puede utilizar el programa en su ordenador.
+
+
+	2. Funciones
+	
+	2.1 Log In MD5
+	   - Las contraseñas utilizadas en el Login son cifradas con el proceso MD5, que consiste en un algoritmo de
+	     reducción criptográfica de 128 bits compuesto por 32 caracteres hexadecimales.
+	   - Si es la primera vez que utiliza el programa, deberá escoger la opcion de registrarse, la cual debera ingresar
+	     su nombre de usuario y dos veces una contraseña segura  que usted desee.
+           - Una vez registrado, puede escoger la opcion de ingresar para poder utilizar el programa.
+           - Si el usuario escoge la opción de salir, se imprimirá el logo de la Universidad de las Fuerzas Armas ESPE como
+	     despedida al usuario por haber utilizado el programa.
+	
+	2.2 Agregar Palabra
+	   - Existe la posibilidad de que el usuario quiera agregar palabras al diccionario a medida que vaya aprendiéndolas,
+	     por lo que se ha incorporado una opción que lo permite.
+ 
+	2.3 Buscar Palabra
+	   - Funcionalidad básica de todo diccionario, consiste en buscar palabras y obtener su traducción, con el plus de
+	     poder escuchar la traducción en voces propias de cada idioma.
+
+	2.4 Mostrar el Diccionario completo
+	    - Para aquellos que deseen buscar una palabra manualmente. Al estar basado en árboles binarios, el contenido del
+	      diccionario se muestra por defecto impreso en Preorden.
+	
+
+	3. Errores comunes que se presentan en el uso aplicación
+
+		- Si el usuario ingresa un caracter especial o un numero, la opcion de ingreso se repetirá hasta que se ingrese
+		  el dato de manera correcta.
+		- Si el usuario intenta buscar una palabra que no existe en el diccionario, debe presionar la tecla ENTER para
+		  regresar al menú del diccionario.
+		- Si el usuario desconoce de las palabras que estan en el diccionario, puede recurrir a la opcion de mostrar
+		  diccionario completo en la cual podrá consultar que palabras se encuentran
+		- En el caso de que sea dificil encontrar una palabra por la opcion de mostrar diccionario completo, puede recurrir
+		  a ingresar esa palabra. Si en la opción ingresar palabra salta una excepcion de que ya existe tal palabra, es 
+		  posible que el usuario este ingresando la palabra de manera incorrecta.
+		
+		
+	

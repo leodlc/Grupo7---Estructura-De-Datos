@@ -62,11 +62,9 @@
     <ClInclude Include="utils.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="imga.png">
-      <Filter>Archivos de origen</Filter>
-    </Image>
+    <ClInclude Include="Voice.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="users.txt" />

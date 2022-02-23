@@ -7,6 +7,12 @@
 #include "utils.h"
 #include "md5.h"
 
+/**
+* @file auth.h
+* @author Leonardo de la Cadena
+* @version 1.1.5
+*/
+
 class User {
 public:
 	User(std::string username, std::string password) {
@@ -33,6 +39,11 @@ public:
 		loadUsers();
 	}
 
+	/**
+	* @brief check if user exists
+	* @param string
+	* @return bool
+	*/
 	bool userExists(std::string username) {
 		for (User user : users_) {
 			std::string a = utils::strtolower(user.username());
@@ -46,6 +57,12 @@ public:
 		return false;
 	}
 
+	/**
+	* @brief log in
+	* @param string
+	* @param string
+	* @return bool
+	*/
 	bool login(std::string username, std::string password) {
 		MD5 md5;
 
@@ -59,6 +76,11 @@ public:
 		return false;
 	}
 
+	/**
+	* @brief register new user
+	* @param User
+	* @return void
+	*/
 	void registerUser(User user) {
 		std::ofstream archivo("users.txt", std::ios::app);
 		MD5 md5;

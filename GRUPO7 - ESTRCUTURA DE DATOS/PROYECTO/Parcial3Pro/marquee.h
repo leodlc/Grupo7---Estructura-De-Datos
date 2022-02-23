@@ -4,6 +4,12 @@
 #include <atomic>
 #include "console.h"
 
+/**
+* @file marquee.h
+* @author Leonardo de la Cadena
+* @version 1.0
+*/
+
 struct MarqueeCharacter {
     char character;
     short x;
@@ -15,8 +21,20 @@ public:
     Marquee() = default;
     Marquee(std::string text, short limit);
 
+    /**
+    * @brief declare the marquee text
+    * @param string
+    * @return void
+    */
     void text(std::string text);
+
     std::string text();
+
+    /**
+    * @display marquee
+    * @param
+    * @return void
+    */
     void display();
 
 private:

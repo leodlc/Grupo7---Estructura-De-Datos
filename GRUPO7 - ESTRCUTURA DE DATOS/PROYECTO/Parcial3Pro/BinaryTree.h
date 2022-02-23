@@ -5,6 +5,13 @@
 #include <string>
 #include <string.h>
 #include <stdlib.h>
+#include "Voice.h"
+
+/**
+* @file BinaryTree.h
+* @author Adrian Paez
+* @version 1.0
+*/
 
 using namespace std;
 
@@ -15,27 +22,104 @@ private:
     Node* tree = NULL;
 
 public:
+
+    /**
+    * @brief setTree
+    * @param Node*
+    * @return void
+    */
     void setTree(Node*);
+
+    /**
+    * @brief getTree
+    * @param
+    * @return Node*
+    */
     Node* getTree();
 
+    /**
+    * @brief create new Node*
+    * @param string, string, Node*
+    * @return Node*
+    */
     Node* createNew(string, string, Node*);
 
+    /**
+    * @brief copy data from txt to tree
+    * @param Node*&
+    * @return void
+    */
     void initProgram(Node*&);
 
+    /**
+    * @brief compare 2 strings
+    * @param string, string
+    * @return int
+    */
     int compare(string, string);
-    void insert(Node*&, string, string, Node*);
-    void insertNew(Node*&, string, string, Node*);
-    void show(Node*);
-    void search(Node*, string);
-    Node* minimum(Node*);
-    void replace(Node*, Node*);
-    void destroyNode(Node*);
-    void deleteNode(Node*);
-    void deletion(Node*, string);
 
-    /* void preOrden(Node*);
-    void inOrden(Node*);
-    void postOrden(Node*); */
+    /**
+    * @brief insert from file to tree
+    * @param Node*&, string, string, Node*
+    * @reutrn void
+    */
+    void insert(Node*&, string, string, Node*);
+
+    /**
+    * @brief insert new node to tree
+    * @param Node*&, string, string, Node*
+    * @return void
+    */
+    void insertNew(Node*&, string, string, Node*);
+
+    /**
+    * @brief show tree
+    * @param Node*
+    * @return void
+    */
+    void show(Node*);
+
+    /**
+    * @brief search node
+    * @param Node*, string
+    * @return void
+    */
+    void search(Node*, string);
+
+    /**
+    * @brief find minimum node
+    * @param Node*
+    * @return Node*
+    */
+    Node* minimum(Node*);
+
+    /**
+    * @brief replace node with another
+    * @param Node*, Node*
+    * @return void
+    */
+    void replace(Node*, Node*);
+
+    /**
+    * @brief destroy or delete node
+    * @param Node*
+    * @return void
+    */
+    void destroyNode(Node*);
+
+    /**
+    * @brief delete a node
+    * @param Node*
+    * @return void
+    */
+    void deleteNode(Node*);
+
+    /**
+    * @brief deletion decision depending the case
+    * #param Node*, string
+    * @return void
+    */
+    void deletion(Node*, string);
 
 };
 
@@ -160,7 +244,7 @@ void BinaryTree::show(Node* tree)
     {
         cout << "Palabra: ";
         cout << tree->getData() << endl;
-        cout << "Significado: " << endl;
+        cout << "Traduccion en Ingles: ";
         cout << tree->getMeaning() << endl;
         cout << endl;
 
@@ -173,15 +257,25 @@ void BinaryTree::search(Node* tree, string data)
 {
     if (tree == NULL)
     {
-        cout << "Esa palabra no esta registrada en el diccionario" << endl;
+        cout << "Esa palabra no esta registrada. Revise el FAQ para mas informacion..." << endl;
         _getch();
         return;
     }
     else if (data == tree->getData())
     {
-        cout << "La palabra " << data << " significa: " << endl;
+        Voice vox;
+        Tools tool;
+        cout << "La palabra " << data << " en ingles es: ";
         cout << tree->getMeaning() << endl;
         cout << endl;
+        cout << "Sugerencia: Mantenga presionada la tecla V si quiere escuchar la traduccion" << endl;
+
+        _getch();
+        while (tool.keyPressed(86))
+        {
+            vox.voiceGen(data, tree->getMeaning());
+        }
+
         system("pause");
     }
     else if (compare(data, tree->getData()) < 0)
@@ -305,45 +399,3 @@ void BinaryTree::deletion(Node* tree, string data)
     }
 
 }
-
-/* void BinaryTree::preOrden(Node* tree)
-{
-    if(tree == NULL)
-    {
-        return;
-    }
-    else
-    {
-        cout << tree->getData() << " ";
-        preOrden(tree->getLeft());
-        preOrden(tree->getRight());
-    }
-}
-
-void BinaryTree::inOrden(Node* tree)
-{
-    if(tree == NULL)
-    {
-        return;
-    }
-    else
-    {
-        inOrden(tree->getLeft());
-        cout << tree->getData() << " ";
-        inOrden(tree->getRight());
-    }
-}
-
-void BinaryTree::postOrden(Node* tree)
-{
-    if(tree == NULL)
-    {
-        return;
-    }
-    else
-    {
-        postOrden(tree->getLeft());
-        postOrden(tree->getRight());
-        cout << tree->getData() << " ";
-    }
-} */

@@ -5,18 +5,59 @@
 #include <stdio.h>
 #include <Windows.h>
 
+/**
+* @file Tools.h
+* @author Adrian Paez
+* @version 2.0
+*/
+
 using namespace std;
 
 class Tools
 {
 private:
 public:
+
+	/**
+	* @brief validate int data
+	* @param const char*
+	* @return int
+	*/
 	int validate_int(const char*);
+
+	/**
+	* @brief validate char data
+	* @param const char*
+	* @return string
+	*/
 	string validate_char(const char*);
+
+	/**
+	* @brief go to xy coordinates in console
+	* @param int, int
+	* @return void
+	*/
 	void gotoxy(int, int);
+
+	/**
+	* @brief detect if a given key is pressed
+	* @param int
+	* @return int
+	*/
 	int keyPressed(int);
-	int arrowPressed(int);
+
+	/**
+	* @brief get position of console cursor in screen points
+	* @param
+	* @return COORD
+	*/
 	COORD GetConsoleCursorPosition();
+
+	/**
+	* @brief get click of mouse
+	* @param
+	* @return COORD
+	*/
 	COORD GetMouseClick();
 };
 

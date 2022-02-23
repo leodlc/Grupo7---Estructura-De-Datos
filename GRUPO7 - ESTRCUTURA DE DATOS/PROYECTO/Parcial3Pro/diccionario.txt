@@ -3,3 +3,5 @@ computadora/maquina
 perro/animal
 vidrio/elemento
 puerta/door
+cartero/mailer
+sopa/soup

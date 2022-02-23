@@ -166,9 +166,7 @@
     <ClInclude Include="pixelatedImg.h" />
     <ClInclude Include="Tools.h" />
     <ClInclude Include="utils.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="imga.png" />
+    <ClInclude Include="Voice.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="users.txt" />

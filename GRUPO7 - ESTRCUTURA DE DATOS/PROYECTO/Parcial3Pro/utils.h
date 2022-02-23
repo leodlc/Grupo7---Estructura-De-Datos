@@ -6,6 +6,12 @@
 #include <conio.h>
 #include <windows.h>
 
+/**
+* @file utils.h
+* @author Leonardo de la Cadena
+* @version 1.0
+*/
+
 #ifndef _MSC_VER
 #define _getch getch
 #endif

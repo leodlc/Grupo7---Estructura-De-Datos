@@ -10,6 +10,13 @@
 #include "marquee.h"
 #include "auth.h"
 
+/**
+* @file menu.h
+* @authoe Adrian Paez
+* @author Leonardo de la Cadena
+* @version 1.0
+*/
+
 #define KEY_UP 72
 #define KEY_DOWN 80
 #define ENTER 13
@@ -23,9 +30,33 @@ private:
 	Node* tree = NULL;
 	bool running = false;
 public:
+
+	/**
+	* @brief automatization of capture option in a menu controlled with directional keys
+	* @param string, vector<string>, int
+	* @return int
+	*/
 	int showCaptureOp(string, vector<std::string>, int);
+
+	/**
+	* @brief principal menu decision routine
+	* @param
+	* @return void
+	*/
 	void principalMenu();
+
+	/**
+	* @param show authentication menu
+	* @param
+	* @return void
+	*/
 	void showAuthMenu();
+
+	/**
+	* @brief enter to main menu
+	* @param
+	* @return bool
+	*/
 	bool enterToMain();
 	void stop();
 };
@@ -84,7 +115,7 @@ void MyMenu::principalMenu()
 	Marquee marquee("Universidad de las fuerzas armadas ESPE - Grupo 7", Console::get().get_console_size().X - 3);
 	cout << "\n " << endl;
 	cout << "\n " << endl;
-	vector<std::string> options = {"Buscar palabra", "Agregar palabra", "Ver diccionario completo", "Salir"};
+	vector<std::string> options = {"Buscar palabra", "Agregar palabra", "Ver diccionario completo", "FAQ", "Salir"};
 	bool repeat = true;
 	int option;
 	string data, meaning;
@@ -100,22 +131,20 @@ void MyMenu::principalMenu()
 		cout << "\n " << endl;
 		cout << "\n " << endl;
 		
-		option = showCaptureOp("\n Menu Diccionario", options, 4);
+		option = showCaptureOp("\n Menu Diccionario", options, 5);
 
 		//alternatives
 		switch (option)
 		{
 		case 1:
 			system("cls");
-			data = tool.validate_char("\nIngrese la palabra que quiere buscar: ");
+			data = tool.validate_char("\nIngrese la palabra que quiere traducir: ");
 			binary.search(this->tree, data);
 			break;
 		case 2:
 			system("cls");
 			data = tool.validate_char("\nIngrese la palabra que quiere agregar: ");
-			cout << "Ingrese el significado: " << endl;
-			cout << "-> ";
-			cin >> meaning;
+			meaning = tool.validate_char("\nIngrese la traduccion en ingles: ");
 			binary.insertNew(this->tree, data, meaning, NULL);
 			break;
 		case 3:
@@ -124,9 +153,14 @@ void MyMenu::principalMenu()
 			_getch();
 			break;
 		case 4:
+			system("FAQ.txt");
+			system("pause");
+			break;
+		case 5:
 			system("cls");
-			cout << "\nSaliendo... Presione una tecla para continuar" << endl;
-			_getch();
+			cout << "\nSaliendo... r" << endl;
+			Sleep(100);
+			showAuthMenu();
 			repeat = false;
 			break;
 		
