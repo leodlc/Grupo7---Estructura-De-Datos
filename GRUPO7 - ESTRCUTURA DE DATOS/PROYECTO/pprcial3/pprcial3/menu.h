@@ -119,6 +119,7 @@ void MyMenu::principalMenu()
 		case 3:
 			system("cls");
 			binary.show(this->tree);
+			_getch();
 			break;
 		case 4:
 
